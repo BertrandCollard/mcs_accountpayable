@@ -1,0 +1,14 @@
+{
+  "name" : "invoicemanagment",
+  "version" : "1.0.0",
+  "description" : "Invoice Management RU/L APIs",
+  "main" : "invoicemanagment.js",
+  "dependencies": {
+  "sha1": "1.1.1" },
+  "oracleMobile" : {
+    "dependencies" : {
+      "apis" : { },
+      "connectors" : { "/mobile/connector/InvoiceWS": "1.0" }
+    }
+  }
+}

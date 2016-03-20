@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>OMCMobileBackendManager Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">Mobile Client SDK </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Oracle Corporation, 16.1.5.0 - E69834-02</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/defaultMobileBackend">defaultMobileBackend</option>
+		
+		<option value="//api/name/logLevel">logLevel</option>
+		
+		<option value="//api/name/properties">properties</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/sharedManager">+ sharedManager</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/addMobileBackendForName:properties:">- addMobileBackendForName:properties:</option>
+		
+		<option value="//api/name/mobileBackendForName:">- mobileBackendForName:</option>
+		
+		<option value="//api/name/removeMobileBackend:">- removeMobileBackend:</option>
+		
+		<option value="//api/name/removeMobileBackendForName:">- removeMobileBackendForName:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">OMCMobileBackendManager Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>OMCMobileBackendManager.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>The mobile backend manager is the entry point to the Oracle Mobile Cloud SDK.
+It is responsible for building and holding the various mobile backends.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/defaultMobileBackend" title="defaultMobileBackend"></a>
+	<h3 class="method-title"><code><a href="#//api/name/defaultMobileBackend">&nbsp;&nbsp;defaultMobileBackend</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The mobile backend manager&rsquo;s default mobile backend. This is the mobile backend
+designated as the the &ldquo;default&rdquo; mobile backend in the OMC property list file
+(<code>OMC.plist</code>).</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic) OMCMobileBackend *defaultMobileBackend</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The default mobile backend can be designated by adding a boolean flag named
+<code>default</code> to the corresponding mobile backend&rsquo;s dictionary in the OMC property
+list file (<code>OMC.plist</code>) and setting its value to <code>YES</code>. The manager&rsquo;s default
+mobile backend is undefined if more than one mobile backend is designated &ldquo;default&rdquo;
+or if no mobile backend is designated &ldquo;default&rdquo;.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">OMCMobileBackendManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/properties" title="properties"></a>
+	<h3 class="method-title"><code><a href="#//api/name/properties">&nbsp;&nbsp;properties</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The mobile backend manager&rsquo;s properties, as specified by the OMC property list file
+(<code>OMC.plist</code>).</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic) NSDictionary *properties</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">OMCMobileBackendManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/logLevel" title="logLevel"></a>
+	<h3 class="method-title"><code><a href="#//api/name/logLevel">&nbsp;&nbsp;logLevel</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The mobile backend manager&rsquo;s log level. This log level controls the volume of log entries
+produced by the Oracle Mobile Cloud SDK. The log level can be set to one of the following
+levels: none, error, warning, info, debug.
+This log level can be either initialized
+from the default property list file (<code>OMC.plist</code>) or set directly at
+runtime via this property. If it is not set explicitly, the log level is <code>error</code>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) NSString *logLevel</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">OMCMobileBackendManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/sharedManager" title="sharedManager"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sharedManager">+&nbsp;sharedManager</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns the singleton mobile backend manager.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (OMCMobileBackendManager *)sharedManager</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">OMCMobileBackendManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/mobileBackendForName:" title="mobileBackendForName:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/mobileBackendForName:">&ndash;&nbsp;mobileBackendForName:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns the receiver&rsquo;s mobile backend for the specified name, if present.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (OMCMobileBackend *)mobileBackendForName:(NSString *)<em>name</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>name</code></th>
+						<td><p>The name of the mobile backend.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns <code>nil</code> if the receiver does not contain a mobile backend for the specified name.</p><div class="warning"><p><strong>Warning:</strong> Raises an <code>NSInvalidArgumentException</code> if <code>name</code> is <code>nil</code>.</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">OMCMobileBackendManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addMobileBackendForName:properties:" title="addMobileBackendForName:properties:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addMobileBackendForName:properties:">&ndash;&nbsp;addMobileBackendForName:properties:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Adds to the receiver and returns a new mobile backend for the specified name
+and initialized with the specified <a href="#//api/name/properties">properties</a>.
+The <a href="#//api/name/properties">properties</a> must be in the same form as the <a href="#//api/name/properties">properties</a> in the OMC property
+list file (<code>OMC.plist</code>).</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (OMCMobileBackend *)addMobileBackendForName:(NSString *)<em>name</em> properties:(NSDictionary *)<em>properties</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>name</code></th>
+						<td><p>The name of the new mobile backend.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>properties</code></th>
+						<td><p>The new mobile backend&rsquo;s initial <a href="#//api/name/properties">properties</a>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>If the receiver already contains a mobile backend with the specified name, replaces
+it with the newly created mobile backend.</p>
+
+<p>If the specified <a href="#//api/name/properties">properties</a> indicate the new mobile backend should be the default
+mobile backend, the new mobile backend will replace the current default mobile backend.</p>
+
+<p>If the receiver does not yet have a default mobile backend, the new mobile backend
+will become the default mobile backend, even if the specified <a href="#//api/name/properties">properties</a> do not
+indicate the new mobile backend should be the default.</p><div class="warning"><p><strong>Warning:</strong> Raises an <code>NSInvalidArgumentException</code> if either <code>name</code> or <a href="#//api/name/properties"><code>properties</code></a> is <code>nil</code>.</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">OMCMobileBackendManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/removeMobileBackend:" title="removeMobileBackend:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/removeMobileBackend:">&ndash;&nbsp;removeMobileBackend:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Removes from the receiver the specified mobile backend.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)removeMobileBackend:(OMCMobileBackend *)<em>mobileBackend</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>mobileBackend</code></th>
+						<td><p>The mobile backend.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Does nothing if the receiver does not contain the specified mobile backend.</p><div class="warning"><p><strong>Warning:</strong> Raises an <code>NSInvalidArgumentException</code> if <code>mobileBackend</code> is <code>nil</code>.</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">OMCMobileBackendManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/removeMobileBackendForName:" title="removeMobileBackendForName:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/removeMobileBackendForName:">&ndash;&nbsp;removeMobileBackendForName:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Removes from the receiver the mobile backend for the specified name.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)removeMobileBackendForName:(NSString *)<em>name</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>name</code></th>
+						<td><p>The name of the mobile backend.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Does nothing if the receiver does not contain a mobile backend for the specified name.</p><div class="warning"><p><strong>Warning:</strong> Raises an <code>NSInvalidArgumentException</code> if <code>name</code> is <code>nil</code>.</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">OMCMobileBackendManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2016 Oracle Corporation, 16.1.5.0 - E69834-02. All rights reserved. Updated: 2016-03-09</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>
